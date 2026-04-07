@@ -29,8 +29,7 @@
 
 
 //OPERADORES ARITMETICOS 
-
-const valor1=20
+/*const valor1=20
 const valor2=10
 
 console.log(valor1 + valor2);
@@ -51,4 +50,30 @@ console.log(valor1 >= valor2);
 console.log(valor1 <= valor2);
 console.log(valor1 != valor2);
 console.log(valor1 == valor2);
-console.log(valor1 === valor2);
+console.log(valor1 === valor2);*/
+
+//ESTRUTURA DE REPETIÇÃO (LAÇO DE REPETIÇÃO)
+
+//for - estrutura de repetição utilizada quando sabemos previamente quantas vezes o codigo vai ser executado
+
+// declaração, operação, incremento
+for(let i=1; i<=5;i++){
+    console.log("Numero:", i);
+}
+
+// for para array 
+
+const linguagens = ["Java", "Python", "C#", "PHP"];
+for(let i=0; i < linguagens.length;i++){
+    console.log("Linguagem", i, ":", linguagens[i]);
+}
+
+const tecnologias = ["JS", "HTML", "CSS"]
+for(const tech of tecnologias){
+    console.log("estudando", tech)
+}
+
+const carros = {marca:"Volks", modelo:"Fusca", ano:1980};
+for(let dados in carros){
+    console.log(dados, ":", carros[dados])
+}
